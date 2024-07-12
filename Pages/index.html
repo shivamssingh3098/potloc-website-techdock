@@ -1,0 +1,690 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="'Style/style.css" />
+    <link rel="stylesheet" href="Style/OurResources.css" />
+    <link rel="stylesheet" href="Style/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>potloc</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light  header-fixed-position">
+        <div class="container-fluid navbar-bg">
+          <a class="navbar-brand ms-3" href="{{('/')}}">
+            <img src="{{ asset('../images/images/logo.png')}}" class="logo-img" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto nav-item-sm me-5 mb-2 mb-lg-0 ">
+              <li class="nav-item dropdown sm-border">
+                <a
+                  class="nav-link dropdown-toggle"
+                  style="color: rgba(232, 13, 112, 1);"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                {{ cleanLang(__('lang.oursolution')) }} 
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-oursolution')}}"
+                      >{{ cleanLang(__('lang.oursolution')) }} </a>
+                  </li>
+                 
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-questionnaire')}}"
+                      >  {{ cleanLang(__('lang.questionnaire')) }}</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-sampling')}}"
+                      > {{ cleanLang(__('lang.sampling')) }}</a
+                    >
+                  </li>
+  
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-dashboard')}}"
+                      >{{ cleanLang(__('lang.dashboard')) }} </a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-dataAnlsis')}}"
+                      >{{ cleanLang(__('lang.dataAnalysis')) }} </a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item sm-border">
+                <a class="nav-link" style="color: black" href="{{ url('/admin/front-client')}}"
+                  >{{ cleanLang(__('lang.client')) }}</a
+                >
+              </li>
+              <li class="nav-item dropdown sm-border">
+                <a
+                  class="nav-link dropdown-toggle"
+                  style="color: rgba(232, 13, 112, 1);"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                {{ cleanLang(__('lang.resources')) }}  
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item " href="{{ url('/admin/front-ourResources')}}"
+                      >{{ cleanLang(__('lang.all_resourse')) }}</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item "
+                      style="color: black"
+                      href="/admin/front-ourResources#pulic-study"
+                      > {{ cleanLang(__('lang.public_studies')) }}</a
+                    >
+                  </li>
+  
+                  <li>
+                    <a class="dropdown-item " href="/admin/front-ourResources#whitepapers">{{ cleanLang(__('lang.whitepapers')) }}Whitepapers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="/admin/front-ourResources#case-studies">{{ cleanLang(__('lang.casestudies')) }}Case Studies</a>
+                  </li>
+                  <li><a class="dropdown-item " href="/admin/front-ourResources#blogs">{{ cleanLang(__('lang.Blog')) }}</a></li>
+                  <li>
+                    <a class="dropdown-item " href=" {{ url('/admin/front-helpCenter')}}"
+                      > {{ cleanLang(__('lang.Help_center')) }}</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item sm-border">
+                <a class="nav-link menu_btn" style=" color:black;" href="#">{{ cleanLang(__('lang.company')) }} </a>
+              </li>
+            </ul>
+  
+            <div class="row me-5">
+              <div class="col d-flex justify-content-center"> 
+                  <div class="me-5 login-btn p-0" style="height:40px">
+                <a href="{{('/login')}}"
+                  ><button class="btn  " type="submit">{{ cleanLang(__('lang.login')) }}</button>
+                </a>
+              </div>
+              {{-- <div class="">
+                <a href="{{('/signup')}}"
+                  ><button class="btn me-1 login-btn" type="submit"> {{ cleanLang(__('lang.signup')) }}</button>
+                </a>
+              </div> --}}
+              <div class="contactrow1 ms-5 mb-3 ms-md-0">
+                <a href="{{('/admin/front-contect')}}">
+                  <button
+                    class="btn text-white btn-color me-0"
+                    type="submit"
+                  >
+                  {{-- {{ cleanLang(__('lang.contact')) }}  --}} Contact Us
+                  </button></a
+                >
+              </div> 
+  
+  
+              
+              
+              
+             </div>
+             
+            </div>
+  {{-- ***************** --}}
+  
+  <div class="row contactrow sm-global mb-3">
+    <div class="col-md-12 englishbtn d-flex justify-content-center ">
+    <li class="nav-item dropdown sm-border" style="list-style: none">
+      <a
+        class="nav-link dropdown-toggle"
+        style="color: black"
+        href="#"
+        id="navbarDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      > <i class="fa-solid fa-globe"></i>
+        English
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li>
+          <a class="dropdown-item " href="{{ url('/locale/english')}}"
+            > English </a>
+        </li>
+       
+        <li>
+          <a class="dropdown-item " href="{{ url('/locale/french')}}"
+            >French</a
+          >
+        </li>
+    
+      </ul>
+    </li>
+    </div> 
+  </div>
+  {{-- ************* --}}
+  
+          </div>
+        </div>
+      </nav>
+
+                
+{{-- ***************** --}}
+<section>
+  <div  class="container-fluid footer text-center p-4" style=" background: rgba(39, 41, 48, 1);">
+   <div class="row">
+    <div class="col-12 col-md-3">
+      <div class="d-none d-md-block" style="color:white">
+        <div class="row text-center pt-4">
+          <ul style="list-style-type:none;">
+           <li class="pt-5">Meet Potloc</li>
+            <li class="pt-3"><a href="" style="color:white">Our Solution</a></li>
+            <li class="pt-3"><a href="" style="color:white">Clients</a></li>
+           </ul>
+        </div>
+      </div>
+      <div class="row d-block d-md-none pt-5"  >
+        <div class="accordion  " id="accordionFlushExample" >
+            
+            
+          <div class="accordion-item px-sm-5  border-bottom"  style="background: rgba(39, 41, 48, 1); color:white;">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="background:rgba(39, 41, 48, 1); color:white;">
+                {{ cleanLang(__('lang.Meet_Potloc')) }}
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">
+               
+              
+             <p><a class="text-decoration-none" style="color:white" href="">Our Solution</a></p> 
+               <p> <a class="text-decoration-none" style="color:white" href="">Clients</a></p> 
+             
+              
+           
+                
+              </div>
+            </div>
+          </div>
+          
+          
+          
+                 <div class="accordion-item px-sm-5  border-bottom"  style="background: rgba(39, 41, 48, 1); color:white;">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background:rgba(39, 41, 48, 1); color:white;">
+             About Us
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">
+               
+              <a class="text-decoration-none" style="color:white" href="">Company</a></p
+              <p>  <a class="text-decoration-none" style="color:white" href="">Newsroom</a></p>
+          <p> <a class="text-decoration-none" style="color:white" href="">Careers</a></p>  
+                 <p> <a class="text-decoration-none" style="color:white" href="">Potloc in the news</a></p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <!--<div class="accordion-item"  style="background: rgba(39, 41, 48, 1); color:white;">-->
+          <!--  <h2 class="accordion-header" id="flush-headingThree">-->
+          <!--    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsethree" aria-expanded="false" aria-controls="flush-collapseTwo" style="background: rgba(39, 41, 48, 1); color:white;">-->
+          <!--     About Us-->
+          <!--    </button>-->
+          <!--  </h2>-->
+          <!--  <div id="flush-collapsethree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">-->
+          <!--    <div class="accordion-body" style="background: rgba(39, 41, 48, 1); color:white;">-->
+          <!--      <div id="flush-collapsethree" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">-->
+          <!--        <div class="accordion-body text-start" >-->
+                      
+                   
+             
+          <!--            <p> <a  style="color:white" href="">Company</a></p>-->
+          <!--             <p>  <a  style="color:white" href="">Newsroom</a></p>-->
+          <!--              <p> <a style="color:white" href="">Careers</a></p>-->
+          <!--               <p> <a  style="color:white" href="">Potloc in the news</a></p>-->
+                   
+                  
+                    
+                     
+                    
+              
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+          
+          
+          
+                     <div class="accordion-item px-sm-5  border-bottom"  style="background: rgba(39, 41, 48, 1); color:white;">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background:rgba(39, 41, 48, 1); color:white;">
+            Resources
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-start">
+               
+              <a class="text-decoration-none" style="color:white" href="">Blog</a></p
+              <p>  <a class="text-decoration-none" style="color:white" href="">Whitepapers</a></p>
+          <p> <a class="text-decoration-none" style="color:white" href="">Help center</a></p>  
+                 <p> <a class="text-decoration-none" style="color:white" href="">Case studies</a></p>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+          <!--<div class="accordion-item"  style="background:rgba(39, 41, 48, 1); color:white;">-->
+          <!--  <h2 class="accordion-header" id="flush-headingTwo">-->
+          <!--    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="background:rgba(39, 41, 48, 1); color:white;">-->
+          <!--      Resources-->
+          <!--    </button>-->
+          <!--  </h2>-->
+          <!--  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">-->
+          <!--    <div class="accordion-body" style="background:rgba(39, 41, 48, 1); color:white;">-->
+          <!--      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">-->
+          <!--        <div class="accordion-body "  style="background:rgba(39, 41, 48, 1); color:white;">-->
+          <!--          <ul style="list-style: none;" class="text-start">-->
+          <!--            <li><a href="" style="color:white">Blog</a></li>-->
+          <!--            <li><a href="" style="color:white">Whitepapers</a></li>-->
+          <!--            <li><a href="" style="color:white">Help center</a></li>-->
+          <!--            <li> <a href="" style="color:white">Case studies</a></li>-->
+                   
+                   
+                   
+                 
+          <!--          </ul>-->
+          <!--        </div>-->
+          <!--      </div>-->
+          <!--    </div>-->
+          <!--  </div>-->
+          <!--</div>-->
+         
+        </div>
+      </div>
+    </div>
+{{-- *********************************** --}}
+
+{{-- *********************************** --}}
+
+    <div class=" col-12 col-md-3">
+      <div class="d-none d-md-block " style="color:white">
+      
+        <div class="row pt-5">
+          <ul style="list-style-type:none;">
+           <li class="pt-3"><a href="" style="color:white">About us</a></li>
+           <li class="pt-3"><a href="" style="color:white">Company</a></li>
+           <li class="pt-3"><a href="" style="color:white">Newsroom</a></li>
+           <li class="pt-3"><a href="" style="color:white">Careers</a></li>
+           <li class="pt-3"><a href="" style="color:white">Potloc in the news</a></li>
+           </ul>
+        </div>
+       
+        
+
+      </div>
+      <div class="d-block d-md-none" style="color:white"></div>
+    </div>
+    <div class=" col-12 col-md-3">
+      <div class="d-none d-md-block pt-5" style="color:white">
+        <div class="row">
+          <ul style="list-style-type:none; color:white;">
+         
+        
+            <li class="pt-3"><a href="" style="color:white">Resources</a></li>
+            <li class="pt-3"><a href="" style="color:white">Blog</a></li>
+            <li class="pt-3"><a href="" style="color:white">Whitepapers</a></li>
+            <li class="pt-3"><a href="" style="color:white">Help center</a></li>
+            <li class="pt-3"><a href="" style="color:white">Case studies</a></li>
+         
+           </ul>
+        </div>
+        </div>
+      <div class="d-block d-md-none pt-5" style="color:white"></div>
+    </div>
+    <div class=" col-12 col-md-3 text-start">
+      <div class="d-none d-md-block pt-5" style="color:white"> 
+       <div class="row pt-4 d-none d-md-block">
+        <p> {{ cleanLang(__('lang.Get in touch')) }}</p>
+        <p><i class="fa-solid fa-square-envelope"></i>
+          contact@potloc.com</p>
+
+          <p><i class="fa-solid fa-square-envelope"></i>
+            North America:
+            <br>
+           <span>+1 888-330-3667</span>
+          </p>
+          <p><i class="fa-solid fa-phone-volume"></i>
+            Europe:
+            <br>
+           <span>
+            +33 1 84 67 12 84
+            </span>
+          </p>    
+
+        <p>Contact Us</p>
+        <p> {{ cleanLang(__('lang.Follow_Us_At')) }}</p>
+        <div class="row">
+          <div class="col">
+          
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i ></a> 
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-youtube"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-twitter"></i></a>
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-linkedin-in"></i></a>
+       </div>
+
+        </div>
+      <div class="d-block d-md-none" style="color:white"></div>
+    </div>
+  </div>
+  </div>
+
+ 
+  <div class="row ">
+  <div class="col-md-12 footerline justify-content-center d-md-block d-none"> 
+ </div>
+   <div class="row">
+   <div class="col-md-9 d-md-block d-none">
+    <div class="row md-2  d-flex  justify-content-end">
+      <div class="col-md-2 d-flex  justify-content-end ">
+        <img src="{{ asset('../images/images/footer1.png')}}" alt="" srcset="" height="50px">
+      </div>
+      <div class="col-md-2  d-flex  justify-content-end">
+        <img src="{{ asset('../images/images/footer2.png')}}" alt="" srcset="" height="70px">
+      </div>
+      <div class="col-md-5">
+      <div class="row  d-flex  justify-content-end">
+        <div class="col-md-2">
+          <img src="{{ asset('../images/images/footer3.png')}}" alt="" srcset="" height="40px">
+          </div> 
+        <div class="col-md-6 text-start d-md-block d-none">
+           <span class="footertext">
+          Accredited by the Canadian
+          <br>
+          Research and Insights Council</span> 
+          </div> 
+      </div>
+      </div>
+      <div class="col-md-2 d-md-block d-none">
+        <a class="nav-item dropdown color-black">
+          <a
+            class="nav-link dropdown-toggle"
+            style="color: white; background-color:none;"
+          
+            href="javascript:;"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false "><i class="fa-solid fa-globe"></i>
+            English
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="lang_switcher_link" data-language="en" lang="en" href="locale/english">English</a>
+            </li> 
+            <li>
+              <a class="lang_switcher_link" data-language="fr" lang="fr" href="locale/french">French</a>
+            </li>   
+          </ul>
+        </li>
+      </a>
+      </div>
+    </div>
+ 
+   </div>
+   <div class="col-md-3 text-center p-3 d-md-block d-none " style="margin-left: -6px;">
+    <a href="{{url('/admin/privacy-policy')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Privacy_Policy')) }} </a>
+    <br>
+    <a href="{{url('/admin/terms-of-use')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Terms_of_use')) }}</a>
+    <br>
+    <a href="{{url('/admin/legal-terms')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Legal_terms')) }}</a>
+  </div>
+   </div>
+
+
+
+
+   <div class="row d-md-none mx-auto  " style="margin-top:10px;">
+    <a class="nav-item dropdown color-black">
+      <a
+        class="nav-link dropdown-toggle"
+        style="color: white; background-color:none;"
+      
+        href="javascript:;"
+        id="navbarDropdown"
+        role="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false "><i class="fa-solid fa-globe"></i>
+        English
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li>
+          <a class="lang_switcher_link" data-language="en" lang="en" href="locale/english">English</a>
+        </li> 
+        <li>
+          <a class="lang_switcher_link" data-language="fr" lang="fr" href="locale/french">French</a>
+        </li>   
+      </ul>
+    </li>
+    </a>
+  </div>
+  <div class="row  mx-auto d-md-none pt-4">
+    <div class="col  ms-5">
+      <img src="{{ asset('../images/images/footer1.png')}}" alt="" srcset="" height="50px">
+    </div>
+    <div class="col">
+      <img src="{{ asset('../images/images/footer2.png')}}" alt="" srcset="" height="70px">
+    </div>
+  </div>
+  <div class="row d-md-none ms-4 pt-4">
+    <div class="col-2 ">
+      <img src="{{ asset('../images/images/footer3.png')}}" alt="" srcset="" height="40px">
+    </div>
+    <div class="col-10  text-start">
+      <span>Accredited by the CanadianM</span>
+      <br>
+      <span> Research and Insights Council</span>
+    </div>
+  </div>
+  <div class="row d-md-none  ms-4 pt-4">
+      <div class="col  ">   
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i ></a> 
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-youtube"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-linkedin-in"></i></a>
+   </div>
+  </div>
+  <div class="row d-md-none   pt-4 ms-4">
+    <div class="col  text-center">  
+    <a href="{{url('/admin/privacy-policy')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Privacy_Policy')) }} </a>
+    <br>
+    <a href="{{url('/admin/terms-of-use')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Terms_of_use')) }}</a>
+    <br>
+    <a href="{{url('/admin/legal-terms')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Legal_terms')) }}</a>
+  </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    
+                                             
+
+
+
+{{-- <section>
+    <div class="container-fluid footer text-center p-4">
+      <div class="row d-flex justify-content-around" style="padding-bottom:50px;">
+        <div class="col-md-5 p-2">
+          <div class="row">
+            <div class="col p-2">
+              <p> {{ cleanLang(__('lang.Meet_Potloc')) }}</p>
+              <p> {{ cleanLang(__('lang.oursolution')) }}</p>
+              <p>{{ cleanLang(__('lang.Client')) }} </p>
+            </div>
+            <div class="col p-2">
+              <p>{{ cleanLang(__('lang.About_Us')) }} </p>
+              <p>{{ cleanLang(__('lang.company')) }} </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 p-2">
+          <div class="row">
+            <div class="col p-2">
+             {{ cleanLang(__('lang.Resources')) }} 
+             {{ cleanLang(__('lang.Blog')) }} </p>
+              {{ cleanLang(__('lang.Whitepaper')) }}
+               {{ cleanLang(__('lang.Case_studies')) }} 
+              {{ cleanLang(__('lang.Help_center')) }} 
+            </div>
+            <div class="col p-2">
+              <p> {{ cleanLang(__('lang.Get in touch')) }}</p>
+              <p><i class="fa-solid fa-square-envelope"></i> {{ cleanLang(__('lang.Email')) }}</p>
+              <p><i class="fa-solid fa-phone-volume"></i> {{ cleanLang(__('lang.Number')) }}</p>
+              <p> {{ cleanLang(__('lang.Follow_Us_At')) }}</p>
+              <div class="row">
+                <div class="col">
+                
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i ></a> 
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-youtube"></i></a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-twitter"></i></a>
+                  <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="row">
+         <div class="col-md-8 footerline offset-md-2"> 
+         </div>
+      </div>
+      <div class="row d-flex justify-content-evenly footerimage">
+       <div class="col-md-2 mt-2">
+        <img src="{{ asset('../images/images/footer1.png')}}" alt="" srcset="" height="50px" style="margin-left:10px;"> 
+       </div>
+       <div class="col-md-2 mt-2">
+        <img src="{{ asset('../images/images/footer2.png')}}" alt="" srcset="" height="70px">
+       </div>
+       <div class="col-md-2">
+        <div class="row">
+          <div class="col-md-2 mt-2">
+            <img src="{{ asset('../images/images/footer3.png')}}" alt="" srcset="" height="40px">
+          </div>
+          <div class="col-md-10 mt-2">
+            <span class="footertext">   <p >{{ cleanLang(__('lang.Accredited_by_the')) }} </p></span>
+            <span class="footertext"> {{ cleanLang(__('lang.Research_and_Insights')) }}</span>
+          </div>
+        </div>     
+       </div>
+
+       <div class="col-md-2">
+        <a class="nav-item dropdown color-black">
+          <a
+            class="nav-link dropdown-toggle"
+            style="color: white; background-color:none;"
+          
+            href="javascript:;"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false "><i class="fa-solid fa-globe"></i>
+            English
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <a class="lang_switcher_link" data-language="en" lang="en" href="locale/english">English</a>
+            </li> 
+            <li>
+              <a class="lang_switcher_link" data-language="fr" lang="fr" href="locale/french">French</a>
+            </li>   
+          </ul>
+        </li>
+      </a>
+       </div>
+       <div class="col-md-2">
+       
+      <a href="{{url('/admin/privacy-policy')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Privacy_Policy')) }} </a>
+      <br>
+      <a href="{{url('/admin/terms-of-use')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Terms_of_use')) }}</a>
+      <br>
+      <a href="{{url('/admin/legal-terms')}}" style="color:white; text-decoration:none">{{ cleanLang(__('lang.Legal_terms')) }}</a>
+       </div>
+      </div>
+    </div>
+  </section> --}}
+
+
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  </body>

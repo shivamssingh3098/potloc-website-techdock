@@ -1,0 +1,125 @@
+ * {
+     box-sizing: border-box;
+     font-family: sans-serif;
+ }
+
+ h1 {
+     font-size: 4.125em;
+     font-weight: 400;
+     word-break: break-word;
+ }
+
+ .list {
+     color: gray;
+ }
+
+ .list:hover {
+     background-color: blue;
+     color: #ffff;
+ }
+
+ .image {
+     max-width: 100%;
+ }
+.Whitepaper-images {
+    max-width: 100%;
+}
+ .text-pink {
+     color: rgba(232, 13, 112, 1.0)
+ }
+ #subscribe-btn{
+    color: #ffff;
+    background-color: #e80d70;;
+ }
+ .email-input:focus{
+    box-shadow: none;
+    border-color: #e80d70;
+ }
+
+ .main-heading{
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.all-res-read3-bg{
+background-image: url(/images/RB-Potloc-2.png);
+min-height: 550px;
+background-repeat: no-repeat;
+
+background-size: cover;
+
+
+
+
+}
+
+
+
+
+
+
+
+ @media screen and (max-width: 768px) {
+.main-heading{
+    font-size: 2.5rem;
+}
+.subscribe-text{
+    font-size: 1.5rem;
+}
+.subscribe-text-para {
+    font-size: 1rem;
+}
+  }
+  @media screen and (min-width: 768px) {
+    .subscribe-text{
+        font-size: 2.0rem;
+    }
+      }
+
+
+      /* All REs blog */
+
+      .para-blog{
+        color:#85868c;
+        font-size: 1.2rem;
+      }
+
+      .casef-p{
+        color:rgb(192, 189, 185);
+      }
+
+  .case1f-bg{
+    /* background-image: url(/images/case1f.jpeg); */
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background: linear-gradient(rgba(60, 51, 51, 0.5), rgba(50, 38, 38, 0.5)), url("/images/case1f.jpeg");
+
+  }
+
+  .case2f-bg{
+    /* background-image: url(/images/case1f.jpeg); */
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background: linear-gradient(rgba(60, 51, 51, 0.5), rgba(50, 38, 38, 0.5)), url("/images/case2f.png");
+
+  }  .case3f-bg{
+    /* background-image: url(/images/case1f.jpeg); */
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background: linear-gradient(rgba(60, 51, 51, 0.5), rgba(50, 38, 38, 0.5)), url("/images/case3f.jpg");
+
+  }  .case4f-bg{
+    /* background-image: url(/images/case1f.jpeg); */
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    background: linear-gradient(rgba(60, 51, 51, 0.5), rgba(50, 38, 38, 0.5)), url("/images/case4f.jpeg");
+
+  }
+  .head-section{
+    background-color: rgb(13,29,61);
+
+  }

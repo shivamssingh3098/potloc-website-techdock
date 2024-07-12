@@ -1,0 +1,45 @@
+*{
+    font-family: 'DM Sans',sans-serif;
+}
+#image-covid {
+    position: absolute;
+    max-width: 100%;
+    margin-top: 7%;
+    width: 350px;
+    /* height: 450px; */
+    
+    z-index: 10;
+}
+.Head-section {
+    background-color: rgb(13,29,61);
+}
+
+
+
+
+  @media only screen and (min-width: 768px) and (max-width: 929px)  {
+    #image-covid {
+        position: absolute;
+      
+        margin-top: 15%;
+        width: 290px;
+       
+       
+        z-index: 10;
+    }
+}
+
+
+
+
+ @media screen and (max-width: 768px) {
+    #image-covid {
+        position: absolute;
+        max-width: 50%;
+        margin-top: 7%;
+        width: 350px;
+        
+        display: none;
+        z-index: 10;
+    }
+  }

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <title>potloc</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light header-fixed-position"
+    >
+      <div class="container-fluid navbar-bg">
+        <a class="navbar-brand ms-3" href="#">
+          <img src="/images/logo.png" class="logo-img" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto nav-item-sm me-5 mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: black"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Our Solution
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/Pages/OurSolutions.html"
+                    >Our Solution</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/Questionnaire.html"
+                    >Questionnaire</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/Sampling.html"
+                    >Sampling</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/Pages/Dashboard.html"
+                    >Dashboard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/DataAnalysis.html"
+                    >Data Analysis</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/Pages/ReadMore1.html"
+                    >ReadMore1</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/Pages/ReadMore3.html"
+                    >ReadMore3</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: black"
+                href="/Pages/PrivacyPolicy.html"
+                >Client</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                style="color: black"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/Pages/OurResources.html"
+                    >All Resources</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    style="color: black"
+                    href="/Pages/OurResources.html#pulic-study"
+                    >Public Studies</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/OurResources.html#whitepapers"
+                    >Whitepapers</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/OurResources.html#case-studies"
+                    >Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/OurResources.html#blogs"
+                    >Blogs</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/Pages/Blog/Blogs.html"
+                    >MBlogs</a
+                  >
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/Pages/HelpCenter.html"
+                    >Help Center</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/AllResources.html"
+                    >AllResources</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                style="color: black"
+                href="/Pages/Company/Companies.html"
+                >Company</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: black" href=""></a>
+            </li>
+          </ul>
+
+          <div class="row">
+            <div class="col">
+              <a href="/Pages/Login.html"
+                ><button class="btn me-4 login-btn" type="submit">Login</button>
+              </a>
+            </div>
+            <div class="col">
+              <a href="/Pages/Contact.html">
+                <button
+                  class="btn text-white btn-color me-4 login-btn"
+                  type="submit"
+                >
+                  Contact
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid main-container pt-5">
+      <section class="pt-5">
+        <div class="row d-flex justify-content-around p-2 pt-5">
+          <div class="col-md-5 sm-display">
+            <img
+              src="/images/img1.png"
+              class="img-fluid animate__animated animate__flipInX animate__slow"
+              alt="image"
+            />
+          </div>
+          <div
+            class="col-md-5 d-flex flex-column justify-content-center align-items-start"
+          >
+            <h1
+              class="text-1 text-font animate__animated animate__fadeIn animate__slow"
+            >
+              The world's largest first-party data platform
+            </h1>
+            <a href="./Pages/OurSolutions.html">
+              <button
+                type="button"
+                class="btn btn-color mt-4 mb-2 animate__animated animate__bounceInLeft animate__slow"
+              >
+                Learn More
+              </button>
+            </a>
+          </div>
+          <div class="col-md-5 md-display">
+            <img
+              src="/images/img1.png"
+              class="img-fluid animate__animated animate__flipInX animate__slow"
+              alt="image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="row d-flex justify-content-around pe-2 ps-2">
+          <div class="col-md-5">
+            <img
+              src="/images/img2.png"
+              class="img-fluid animate__animated animate__rotateInDownLeft animate__slow"
+              alt="image"
+            />
+          </div>
+          <div
+            class="col-md-5 p-2 d-flex flex-column justify-content-center align-items-start"
+          >
+            <h1 class="text-1 text-font">
+              Funded for the future After our successful round of Series B
+              funding in which we've raised $35 million,
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row">
+          <div class="col pt-3 para-text">
+            <p>
+              we are more dedicated than ever to keep revolutionizing the market
+              research industry. Watch this video to learn more about what we've
+              accomplished and what we have planned ahead!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="row pe-5 ps-5 mb-4 d-flex justify-content-evenly">
+          <div class="col-md-2 col-sm-5 mt-4 d-flex justify-content-center">
+            <img
+              src="/company_logo/image 10.png"
+              class=""
+              width="100px"
+              height="40px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4 d-flex justify-content-center">
+            <img
+              src="/company_logo/image 6.png"
+              width="100px"
+              height="40px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4 d-flex justify-content-center">
+            <img
+              src="/company_logo/image 7.png"
+              width="100px"
+              height="40px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4 d-flex justify-content-center">
+            <img
+              src="/company_logo/image 8.png"
+              width="100px"
+              height="40px"
+              alt=""
+            />
+          </div>
+          <div class="col-md-2 col-sm-5 mt-4 d-flex justify-content-center">
+            <img
+              src="/company_logo/image 9.png"
+              width="100px"
+              height="40px"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row p-2 mt-2 para-text">
+          <div class="col">
+            <h1 style="font-weight: bold">
+              Gain access to the largest network of consumers and industry
+              professionals around the world
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row m-4 m-sm-5">
+          <div class="col text-primary">
+            <h2>See the companies that trust us</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col" style="margin-left: 8%; margin-right: 8%">
+            <p class="para-text" style="font-weight: 500; font-size: 1.9rem">
+              Use our social sampling technology on Facebook, LinkedIn,
+              Instagram, or any other social network to get survey respondents
+            </p>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-around p-2">
+          <div
+            class="col-md-3 m-3 p-3 card card-home border animate__animated animate__rotateIn animate__slow"
+          >
+            <div class="row">
+              <div class="col">
+                <img src="/images/image 13.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <h5 style="font-weight: 500">
+              Survey people when they have downtime
+            </h5>
+            <p>
+              We survey people on any topic at a time when they’re willing to
+              answer: when scrolling through their social media feeds.
+            </p>
+          </div>
+          <div
+            class="col-md-3 m-3 p-3 card card-home border animate__animated animate__rotateIn animate__slow"
+          >
+            <div class="row">
+              <div class="col">
+                <img src="/images/image 13.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <h5 style="font-weight: 500">
+              Survey people when they have downtime
+            </h5>
+            <p>
+              We survey people on any topic at a time when they’re willing to
+              answer: when scrolling through their social media feeds.
+            </p>
+          </div>
+          <div
+            class="col-md-3 m-3 p-3 card card-home border animate__animated animate__rotateIn animate__slow"
+          >
+            <div class="row">
+              <div class="col">
+                <img src="/images/image 13.png" class="img-fluid" alt="" />
+              </div>
+            </div>
+            <h5 style="font-weight: 500">
+              Survey people when they have downtime
+            </h5>
+            <p>
+              We survey people on any topic at a time when they’re willing to
+              answer: when scrolling through their social media feeds.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row d-flex mt-4 justify-content-center">
+          <div class="col d-flex justify-content-center">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-color border animate__animated animate__rotateInUpRight"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              style="font-size: 1.1rem"
+            >
+              Get an estimate
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Get an estimate
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body border-none ps-5 pe-5">
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label modal-get-stimate"
+                        style="font-size: 0.9rem"
+                      >
+                        First name*
+                      </label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlInput1"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Last name*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlInput1"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Work Email*</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlInput1"
+                        placeholder="Enter your work email"
+                      />
+                      <p style="font-size: 0.85rem; color: rgb(230, 14, 14)">
+                        Please complete this required field.
+                      </p>
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Phone number*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlInput1"
+                        placeholder="Include country & area code"
+                      />
+                      <p style="font-size: 0.85rem; color: rgb(230, 14, 14)">
+                        Please complete this required field.
+                      </p>
+                    </div>
+
+                    <div class="">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Country*</label
+                      >
+                    </div>
+
+                    <div class="mb-3">
+                      <select
+                        class="form-select"
+                        style="font-size: 0.9rem"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Select your country</option>
+                        <option value="1">India</option>
+                        <option value="2">America</option>
+                        <option value="3">China</option>
+                      </select>
+                      <p style="font-size: 0.85rem; color: rgb(230, 14, 14)">
+                        Please select an option from the dropdown menu.
+                      </p>
+                    </div>
+
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Company*</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlInput1"
+                      />
+                    </div>
+                    <div class="">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >How did you hear about us?*</label
+                      >
+                    </div>
+                    <div class="mb-3">
+                      <select
+                        class="form-select"
+                        style="font-size: 0.9rem"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Please Select</option>
+                        <option value="1">Worth of mouth</option>
+                        <option value="2">
+                          Search Engine (Google, Bing...)
+                        </option>
+                        <option value="3">News</option>
+                        <option value="3">Advertisement</option>
+                        <option value="3">
+                          Social media (Facebook, Instagram, LinkedIn...)
+                        </option>
+                        <option value="3">Conference or Tradeshow</option>
+                      </select>
+                      <p style="font-size: 0.85rem; color: rgb(230, 14, 14)">
+                        Please select an option from the dropdown menu.
+                      </p>
+                    </div>
+
+                    <div class="">
+                      <label
+                        for="exampleFormControlInput1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Number of respondents</label
+                      >
+                    </div>
+                    <div class="mb-3">
+                      <select
+                        class="form-select"
+                        style="font-size: 0.9rem"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Please Select</option>
+                        <option value="1">Less than 300 respondents</option>
+                        <option value="2">300 to 500 respondents</option>
+                        <option value="3">500 to 1000 respondents</option>
+                        <option value="3">More than 1000 respondents</option>
+                        <option value="3">I don't know</option>
+                      </select>
+                      <p style="font-size: 0.85rem; color: rgb(230, 14, 14)">
+                        Please select an option from the dropdown menu.
+                      </p>
+                    </div>
+                    <div class="mb-3">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
+                        style="font-size: 0.9rem"
+                        >Objectives</label
+                      >
+                      <textarea
+                        class="form-control"
+                        style="font-size: 0.9rem"
+                        id="exampleFormControlTextarea1"
+                        rows="3"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-around">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row m-5 estimate-section animate__animated animate__fadeIn">
+          <div class="col text-center mt-3">
+            <h4>We’re establishing a new standard in market research</h4>
+          </div>
+          <div class="row d-flex m-3 justify-content-center text-center">
+            <div class="col-md-2 mt-3">
+              <h1>200</h1>
+              <p>Countries covered</p>
+            </div>
+            <div class="col-md-2 mt-3">
+              <h1>1.7M</h1>
+              <p>Surveys completed</p>
+            </div>
+            <div class="col-md-2 mt-3">
+              <h1>246M</h1>
+              <p>Questions answered</p>
+            </div>
+            <div class="col-md-2 mt-3">
+              <h1>4.5B</h1>
+              <p>Pool of respondents</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-md-8">
+            <h2>
+              Want to stay on top of consumer research? Subscribe to our blog.
+            </h2>
+            <h4>Once a month. Straight to your inbox</h4>
+            <div
+              class="row mt-4 p-3 d-flex flex-column animate__animated animate__fadeInUp"
+            >
+              <div class="col">
+                <input
+                  type="text "
+                  class="input-email"
+                  placeholder="Email Address*"
+                  required
+                />
+                <button type="button" class="btn btn-primary email-btn">
+                  SUBSCRIBE
+                </button>
+              </div>
+              <div class="col mt-4">
+                <button type="button" class="btn btn-primary email-btn-sm">
+                  SUBSCRIBE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <div class="container-fluid footer text-center p-4">
+        <div class="row d-flex justify-content-around">
+          <div class="col-md-6 p-2">
+            <div class="row">
+              <div class="col p-2">
+                <p>Meet Potloc</p>
+                <p>Our Solution</p>
+                <p>Client</p>
+              </div>
+              <div class="col p-2">
+                <p>About Us</p>
+                <p>Company</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 p-2">
+            <div class="row">
+              <div class="col p-2">
+                <p>Resources</p>
+                <p>Blog</p>
+                <p>Whitepaper</p>
+                <p>Case studies</p>
+                <p>Help center</p>
+              </div>
+              <div class="col p-2">
+                <p>Get in touch</p>
+                <p><i class="fa-solid fa-square-envelope"></i> Email</p>
+                <p><i class="fa-solid fa-phone-volume"></i> Number</p>
+                <p>Follow Us At</p>
+                <div class="row">
+                  <div class="col">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-around">
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3"></div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.main-text {
+    margin: 0px 150px 0px 150px;
+    font-size: 3.75em;
+    word-wrap: break-word;
+}
+@media screen and (max-width: 768px) {
+    .main-text{
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 80px;
+        line-height: 3rem;
+    }
+}
+.text-pink {
+    color: rgb(233, 55, 135);
+}
+
+.backgroundImage {
+    background-image: url('../images/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh
+}
+.blog-bg{
+    background-color: #152948;
+}
+.text-bg{
+    color: #85868c;
+}

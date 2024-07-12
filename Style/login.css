@@ -1,0 +1,49 @@
+.login-img-top-right{
+    position: fixed;
+    top:-140px;
+    right: -140px;
+    width: 60%;
+    height: 80%;
+    transform: rotate(30deg); 
+}
+.logo-img-top-right{
+    position: fixed;
+    top:10px;
+    right: 10px;
+}
+.input-fields{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #909090;
+    border-radius: none;
+    background-color: #E6F2FC;
+}
+.login-img{
+    width: 70%;
+    height: 70%;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    .input-fields{
+        width: 100%;
+    }
+    .input-fields-login{
+        width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 768px) {
+   
+    .login-img{
+display: none;
+    }
+  }
+  @media screen and (max-width: 869px) {
+   
+    .login-btn-text{
+        font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,29 @@
+.card-bg{
+    background-color: #fefdff;
+    color:#0f0b0b;
+    
+}
+
+.card-icon{
+    color: #e80d70;
+}
+.card-p{
+    color: #e80d70;
+    font-weight: 500;
+}
+.card-p-text{
+    font-weight: 500;
+}
+
+.card-main-heading{
+    font-weight: 500; 
+    font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .card-main-heading{
+        font-weight: 500; 
+        font-size: 1.5rem;
+    }
+    
+  }
